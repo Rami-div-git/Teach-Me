@@ -954,6 +954,20 @@ footer{
         font-size: 14px;
     }
 
+    /*Opinion Cards*/    
+    .card-opi{
+        width: 300px;
+        text-align: center;
+    }
+    .card-opi-img{
+        width: 55%;
+        margin: 0px auto;
+        margin-top: 25px;
+    }
+    .card-opi-img img{
+        width: 100%;
+    }
+
     /*Footer*/
     .left-footer .logo svg{
         width: 40px;
