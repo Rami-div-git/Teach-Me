@@ -878,6 +878,9 @@ footer{
         flex-direction: column;
         width: 300px !important;
     }
+    .contact-left{
+        width: 100%;
+    }
     .contact-right img{
         width: 300px;
         padding: 0px 15px 15px 15px;
@@ -965,6 +968,11 @@ footer{
         margin-top: 25px;
     }
     .card-opi-img img{
+        width: 100%;
+    }
+
+    /*contact*/
+    .contact-left{
         width: 100%;
     }
 
