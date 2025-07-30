@@ -943,9 +943,6 @@ footer{
 
 /*Media Query for small mobile*/
 @media (max-width: 480px) {
-    .title-all h2{
-        font-size: 25px;
-    }
     /*Courses*/
     .card-cou{
         width: 280px;
