@@ -949,7 +949,7 @@ footer{
 @media (max-width: 480px) {
     /*Courses*/
     .card-cou{
-        width: 290px;
+        width: 300px;
     }
     .card-cou-image{
         width: 100%;
@@ -1070,24 +1070,6 @@ footer{
     100%{transform: rotate(.5turn)}
 }
 
- /* When the page loads */
-
- @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .all{
-    animation: fadeInUp 0.5s ease-in;
-  }
-
-
 .loaders{
     width: fit-content;
     font-weight: bold;
@@ -1098,3 +1080,19 @@ footer{
 }
 
 @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}} 
+
+/* When the page loads */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+.all{
+      animation: fadeInUp 0.8s ease-in;
+}
