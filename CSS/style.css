@@ -806,6 +806,10 @@ footer{
     font-size: 25px;
 }
 
+.footer-copy-right{
+    padding-bottom: 15px;
+}
+
 /*Media Query for mobile and tablet devices*/
 @media (max-width: 768px) {
 
@@ -945,7 +949,7 @@ footer{
 @media (max-width: 480px) {
     /*Courses*/
     .card-cou{
-        width: 280px;
+        width: 290px;
     }
     .card-cou-image{
         width: 100%;
@@ -1080,7 +1084,7 @@ footer{
   }
   
   .all{
-    animation: fadeInUp 1s ease-in;
+    animation: fadeInUp 0.5s ease-in;
   }
 
 

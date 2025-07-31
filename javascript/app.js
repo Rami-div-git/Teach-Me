@@ -17,16 +17,23 @@ scrollToTopBtn.addEventListener('click', () => {
 });
 
 // loading-screen
-  window.addEventListener("load", function() {
+  window.addEventListener("load", function () {
     const loading = document.getElementById("loading-screen");
     const content = document.getElementById("main-content");
 
-    // أضف كلاس fade-out
-    loading.classList.add("fade-out");
+    // 3 second delay after full load
+    setTimeout(function () {
+      loading.classList.add("fade-out");
 
-    // بعد انتهاء التحول (transition) أخفِ العنصر واظهر المحتوى
-    setTimeout(function() {
-      loading.style.display = "none";
-      content.style.display = "block";
-    }, 1000); // ← نفس مدة transition
+    // After the disappearing effect ends (1 second)
+      setTimeout(function () {
+        loading.style.display = "none";
+        content.style.display = "block";
+        
+        // Show content gradually
+        requestAnimationFrame(() => {
+          content.classList.add("visible");
+        });
+      }, 1000); // ← Matches time transition
+    }, 3000); // ← Delay after loading (3000 = 3 seconds)
   });
