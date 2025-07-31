@@ -938,10 +938,19 @@ footer{
         font-size: 15px !important;
         padding: 0px 25px;
     }
+
     /* Scroll */
     #scrollToTop{
         font-size: 22px !important;
         padding: 5px 15px !important;  
+    }
+
+    /* loading-text */
+    #loading-text h2{
+        font-size: 25px;
+    }
+    #loading-text svg{
+        width: 30px;
     }
 }
 
