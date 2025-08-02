@@ -7,6 +7,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    min-height: 100vh;
 }
 
 /*Navbar Desing*/
@@ -488,11 +489,14 @@ section{
     padding: 10px;
     font-size: 14px;
     font-weight: 400;
+    border: 1px solid transparent;
     transition: 0.5s;
 }
 
 .more-details:hover{
-    color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #bababa;
 }
 
 .show-btn{
@@ -560,6 +564,12 @@ section{
     width: 150px;
     height: 150px;
     border-radius: 75px;
+    border: 1px solid #bababa;
+    transition: 0.5s;
+}
+
+.card-opi:hover img{
+    transform: scale(1.1);
     box-shadow: 0px 0px 10px #bababa;
 }
 
@@ -583,7 +593,7 @@ section{
 }
 
 .card-opi-details ul li:hover{
-    transform: translateY(-10%);
+    transform: translateY(-15%);
 }
 
 .cards-opi:hover{
@@ -810,7 +820,15 @@ footer{
     padding-bottom: 15px;
 }
 
-/*Media Query for mobile and tablet devices*/
+/*Media Query for tablet devices*/
+@media (max-width: 1024px) {
+    /*Carousel*/
+    .my-image{
+        height: 750px !important;
+    }
+}
+
+/*Media Query for mobile devices*/
 @media (max-width: 768px) {
 
     /*Navbar*/
@@ -956,6 +974,12 @@ footer{
 
 /*Media Query for small mobile*/
 @media (max-width: 480px) {
+
+    /*Title-All*/
+    .title-all h2{
+        font-size: 28px;
+    }
+
     /*Courses*/
     .card-cou{
         width: 300px;
@@ -999,7 +1023,6 @@ footer{
     }
 }
 
-
 /* Scroll Desing */
 #scrollToTop {
     position: fixed;
@@ -1022,7 +1045,7 @@ footer{
 }
 
 /* loading-screen Desing */
-  #loading-screen {
+#loading-screen {
     position: fixed;
     top: 0;
     right: 0;
@@ -1036,11 +1059,11 @@ footer{
     flex-direction: column;
     opacity: 1;
     transition: opacity 1s ease;
-  }
+}
 
-  #loading-screen.fade-out {
+#loading-screen.fade-out {
     opacity: 0;
-  }
+}
 
 #loading-text {
     margin-top: 1rem;
