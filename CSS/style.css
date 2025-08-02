@@ -916,6 +916,12 @@ footer{
         font-size: 18px !important;
     }
 
+    /*Why choose us*/
+    .why .accordion-body{
+        font-size: 14px !important;
+        text-align: center;
+    }
+
     /*Contact*/
     .contact-body{
         flex-direction: column;
