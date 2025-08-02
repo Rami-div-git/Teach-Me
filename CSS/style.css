@@ -830,13 +830,13 @@ footer{
     /*Contact*/
     .contact-body{
         flex-direction: column;
-        width: 700px !important;
+        width: 500px !important;
     }
     .contact-left{
         width: 100%;
     }
     .contact-right img{
-        width: 700px;
+        width: 500px;
         padding: 0px 15px 15px 15px;
     }
 }
