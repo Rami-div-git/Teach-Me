@@ -826,6 +826,19 @@ footer{
     .my-image{
         height: 750px !important;
     }
+
+    /*Contact*/
+    .contact-body{
+        flex-direction: column;
+        width: 700px !important;
+    }
+    .contact-left{
+        width: 100%;
+    }
+    .contact-right img{
+        width: 700px;
+        padding: 0px 15px 15px 15px;
+    }
 }
 
 /*Media Query for mobile devices*/
