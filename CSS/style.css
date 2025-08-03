@@ -260,7 +260,7 @@ section{
 }
 
 .card-abo button:hover{
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 5px #000;
 }
 
 .card-abo .accordion-body-css{
@@ -895,6 +895,9 @@ footer{
     }
     .card-abo p{
         font-size: 15px;
+    }
+    .card-abo .accordion-body{
+        font-size: 14px;
     }
 
     /*Animated bar*/
